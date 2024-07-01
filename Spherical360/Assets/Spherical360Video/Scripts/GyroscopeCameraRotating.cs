@@ -98,7 +98,7 @@ public class GyroscopeCameraRotating : MonoBehaviour
         return SystemInfo.supportsGyroscope;
     }
 
-    public void Recalibrate()
+    private void Recalibrate()
     {
         Quaternion gyro = GyroToUnity(Input.gyro.attitude);
         _gyroInitialRotation = gyro;
